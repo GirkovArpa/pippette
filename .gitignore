@@ -1,0 +1,7 @@
+*.exe
+*.dll
+*.zip
+
+# Added by cargo
+
+/target

@@ -1,0 +1,190 @@
+* {
+  image-rendering: optimize-quality;
+}
+
+html {
+  background: transparent;
+}
+
+html.dragging * {
+  cursor: crosshair !important;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 10px;
+  background: transparent;
+  width: 440;
+  height: 180;
+  flow: vertical;
+}
+
+#header {
+  cursor: move;
+  width: *;
+  height: 33px;
+  flow: horizontal;
+  background: #2d2d3a;
+}
+
+#window-buttons {
+  margin-left: *;
+  flow: horizontal;
+  cursor: default;
+}
+
+#header button {
+  width: 45px !important;
+  height: 33px !important;
+
+  background: transparent;
+  border-width: 0;
+  outline-width: 0;
+  border-radius: 0;
+  background-position: center middle !important;
+
+  z-index: 9;
+
+  padding: 0;
+}
+
+#toolbar {
+  margin-left: 8px;
+  flow: horizontal;
+  height: 33px;
+}
+
+#toolbar button {
+  width: 33px;
+}
+
+#dropper {
+  cursor: url('this://app/cur/Cursor5.cur');
+}
+
+#dropper:active {
+  cursor: url('this://app/cur/Cursor7.cur');
+}
+
+#toolbar button > i {
+  color: rgba(255, 255, 255, 0.66);
+  padding: 5px;
+  border-radius: 3px;
+  margin: auto;
+}
+
+#toolbar button:hover > i {
+  background-color: rgba(255, 255, 255, 0.19);
+}
+
+#info {
+  background-image: url('this://app/png/Info-Active.png') !important;
+}
+
+#info:hover {
+  background-color: rgba(255, 255, 255, 0.527) !important;
+}
+
+#info:active {
+  background-image: url('this://app/png/Info.png') !important;
+}
+
+#minimize {
+  background-image: url('this://app/png/Minimize-Active.png') !important;
+}
+
+#minimize:hover {
+  background-color: rgba(255, 255, 255, 0.527) !important;
+}
+
+#minimize:active {
+  background-image: url('this://app/png/Minimize.png') !important;
+}
+
+#maximize {
+  background-image: url('this://app/png/Maximize.png') !important;
+  opacity: 0.5;
+  hit-margin: -999px;
+}
+
+#close {
+  background-image: url('this://app/png/Close-Active.png') !important;
+}
+
+#close:hover {
+  background-color: #e81123 !important;
+}
+
+#close:active {
+  background-image: url('this://app/png/Close.png') !important;
+}
+
+#contents {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(color, #1675a0);
+  flow: horizontal;
+  size: *;
+  padding: 18px 7px 12px 7px;
+}
+
+#contents > div {
+  flow: vertical;
+  height: *;
+}
+
+#sliders {
+  border-spacing: 8px;
+}
+
+#rgba {
+  border-spacing: 5px;
+  transform: translate(0, -4px);
+  margin-left: 16px;
+}
+
+#hex {
+  margin-top: *;
+  margin-left: 8px;
+  transform: translate(0, 32px);
+}
+
+#hex input {
+  width: max-content;
+}
+
+input[type='hslider'] {
+  width: 200;
+  height: 12;
+  border-radius: 10px;
+  /*background-color: #0b3c52;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: length(slider-position) 100%;
+  fill: var(color, red);
+}
+
+input[type='hslider'] button.slider {
+  width: 22;
+  height: 22;
+  border-radius: 50%;
+  background: white;
+  border-width: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+input[type='text'] {
+  background: transparent;
+  border: none;
+  outline: none;
+  /*background-color: #0c425a;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 12pt;
+  margin: 0;
+  width: 42px;
+  text-align: center;
+}

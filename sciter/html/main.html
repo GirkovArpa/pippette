@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html window-frame="transparent" window-resizable="false" window-width="440" window-height="180">
+
+  <head>
+    <link href="this://app/css/main.css" rel="stylesheet" />
+    <link href="this://app/css/fontawesome.css" rel="stylesheet" />
+    <script src="this://app/js/main.js" type="module"></script>
+    <title>Pippette</title>
+  </head>
+
+  <body>
+    <div #header>
+      <div #toolbar>
+        <button #dropper><i .fa-solid .fa-eye-dropper></i></button>
+      </div>
+      <div #window-buttons>
+        <button #info></button>
+        <button #minimize></button>
+        <button #maximize></button>
+        <button #close></button>
+      </div>
+    </div>
+    <div #contents>
+      <div #sliders>
+        <input |hslider min="0" max="255" value="22" style="--color: #FD5538" />
+        <input |hslider min="0" max="255" value="117" style="--color: #69C33B" />
+        <input |hslider min="0" max="255" value="160" style="--color: #41A5E1" />
+        <input #alpha |hslider min="0" max="1" value="1" step="0.01" style="--color: #7F7775" />
+      </div>
+      <div #rgba>
+        <input |text min="0" max="255" value="22" />
+        <input |text min="0" max="255" value="117" />
+        <input |text min="0" max="255" value="160" />
+        <input |text min="0" max="1" value="1" />
+      </div>
+      <div #hex>
+        <input |text value="#1675A0FF" />
+      </div>
+    </div>
+  </body>
+
+</html>
