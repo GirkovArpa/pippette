@@ -1,7 +1,7 @@
+#![windows_subsystem = "windows"]
 mod get_cursor_position;
 mod get_pixel_color;
 
-#[windows_subsystem = "windows"]
 #[macro_use]
 extern crate sciter;
 use sciter::Value;

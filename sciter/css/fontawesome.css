@@ -234,7 +234,7 @@
           animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
           animation-timing-function: var(--fa-animation-timing, steps(8)); }
-
+/*
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
   .fa-bounce,
@@ -252,7 +252,7 @@
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
     transition-delay: 0s;
-    transition-duration: 0s; } }
+    transition-duration: 0s; } }*/
 
 /* @keyframes do not work since 4.4.8.27, NEEDS TO BE FIXED
 @-webkit-keyframes fa-beat {
